@@ -1,10 +1,10 @@
 -- 1
-select *
+select squad_id, name
 from Squads
 where leader_id not in (select dwarf_id from Dwarves);
 
 -- 2
-select *
+select dwarf_id, name, age, profession
 from Dwarves
 where age > 150 and profession = 'Warrior';
 
